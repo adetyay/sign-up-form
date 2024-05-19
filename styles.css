@@ -3,29 +3,29 @@
 	box-sizing: border-box;
   }
 
-  * {
+* {
 	margin: 0;
   }
 
-  body {
+body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
   }
 
-  img, picture, video, canvas, svg {
+img, picture, video, canvas, svg {
 	display: block;
 	max-width: 100%;
   }
 
-  input, button, textarea, select {
+input, button, textarea, select {
 	font: inherit;
   }
 
-  p, h1, h2, h3, h4, h5, h6 {
+p, h1, h2, h3, h4, h5, h6 {
 	overflow-wrap: break-word;
   }
   
-  #root, #__next {
+#root, #__next {
 	isolation: isolate;
   }
 
@@ -90,9 +90,9 @@ body {
 legend {
     font-size: 24px;
     font-weight: 600;
-    color: #070707;
+    color: black;
     margin-bottom: 20px;
-	margin-top: 2px;
+	margin-top: 10px;
 }
 
 .text{
@@ -117,6 +117,10 @@ form {
     justify-content: space-between;
 }
 
+::placeholder{
+    opacity: 0.5;
+}
+
 label {
     display: block;
     text-transform: uppercase;
@@ -130,7 +134,7 @@ input {
     padding: 5px 10px;
     width: 300px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 1px solid #9b9b9b;
     border-radius: 4px;
     outline: none;
@@ -138,7 +142,7 @@ input {
 
 input:focus {
     border: 1px solid blue;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.4);
 }
 
 input:invalid {
@@ -155,15 +159,15 @@ input:invalid {
 }
 
 a{
-	color: #168add;
-	text-decoration: none;
+    color: #168add;
+    text-decoration: none;
 }
 
 #submit-form{
 	background-color: #168add;
 	color: white;
 	margin-top: 30px;
-	padding: 5px 5px;
+	padding: 5px;
     font-size: 20px;
     font-weight: 600;
     border-radius: 5rem;
